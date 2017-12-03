@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"target": "es2015",
+    "module": "es6",
+    "experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"paths": {
+      "Action": "./src/state/action/index",
+      "Action/*": "./src/state/action/*",
+      "Util/*": "./src/util/*",
+      "NetStatus": "./src/net-status",
+      "Mtp": "./src/mtp.h.js",
+      "ConfigProvider": "./src/config-provider",
+			"State": "./src/state",
+			"Newtype": "./src/newtype.h",
+      "Bin": "./src/bin",
+			"Monad": "./src/util/monad-t"
+    },
+    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "noLib": true,
+    "skipDefaultLibCheck": true
+  },
+  "extends": "./../../jsconfig.json",
+	"exclude": [
+    "node_modules",
+    "lib",
+    "es"
+	]
+}
