@@ -31,8 +31,9 @@ function handleError(
   msgID: UID,
   outID: UID
 ): Client {
-  console.log(`\n--- request error ---\n`, task.body)
-  if (task.error.handled) return state
+  // This code hangs the main program!
+  // console.log(`\n--- request error ---\n`, task.body)
+  // if (task.error.handled) return state
   const errorObj = new RpcApiError(task.error.code, task.error.message)
   const { command, request } = state
   return command
